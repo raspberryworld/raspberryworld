@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Của Tôi - Roblox</title>
+    <title>Shop Bùm Roblox</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ff4500;
+            background-color: #ff6347;
             color: white;
             text-align: center;
             padding: 20px;
         }
         nav {
+            text-align: center;
             background-color: #333;
             padding: 10px;
-            text-align: center;
         }
         nav a {
             color: white;
@@ -36,7 +37,7 @@
         }
         .product {
             background-color: white;
-            width: 200px;
+            width: 220px;
             margin: 10px;
             padding: 15px;
             border-radius: 5px;
@@ -48,14 +49,14 @@
             border-radius: 5px;
         }
         .product h3 {
-            color: #ff4500;
+            color: #ff6347;
         }
         .product p {
             font-size: 14px;
             color: #555;
         }
         .product button {
-            background-color: #ff4500;
+            background-color: #ff6347;
             color: white;
             padding: 10px;
             border: none;
@@ -63,14 +64,14 @@
             cursor: pointer;
         }
         .product button:hover {
-            background-color: #ff6347;
+            background-color: #ff7f50;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -79,7 +80,7 @@
 <body>
 
 <header>
-    <h1>Shop Của Tôi - Roblox</h1>
+    <h1>Shop Bùm Roblox</h1>
 </header>
 
 <nav>
@@ -107,12 +108,25 @@
         <p>Giá: 150 Robux</p>
         <button>Mua ngay</button>
     </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Sản phẩm 4">
+        <h3>Sản phẩm 4</h3>
+        <p>Giá: 200 Robux</p>
+        <button>Mua ngay</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Sản phẩm 5">
+        <h3>Sản phẩm 5</h3>
+        <p>Giá: 250 Robux</p>
+        <button>Mua ngay</button>
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2024 Shop Của Tôi. All Rights Reserved.</p>
+    <p>&copy; 2024 Shop Bùm Roblox. Tất cả quyền được bảo lưu.</p>
 </footer>
 
 </body>
 </html>
+
 
