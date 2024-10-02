@@ -102,9 +102,15 @@
         .top-up button:hover {
             background-color: #218838;
         }
-        .provider, .denomination {
+        .provider {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .denomination {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             margin: 10px 0;
         }
         .denomination button {
@@ -117,6 +123,7 @@
             flex: 1;
             padding: 10px;
             transition: background-color 0.3s;
+            width: 80px; /* Width of buttons */
         }
         .denomination button:hover {
             background-color: #d3d3d3;
@@ -124,6 +131,7 @@
         .note {
             color: red;
             font-size: 14px;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -188,7 +196,6 @@
         </select>
     </div>
     <div class="denomination">
-        <label>Chọn mệnh giá:</label>
         <button>10,000 VNĐ (Nhận 100%)</button>
         <button>20,000 VNĐ (Nhận 100%)</button>
         <button>30,000 VNĐ (Nhận 100%)</button>
