@@ -93,31 +93,31 @@
     <div class="product">
         <img src="https://via.placeholder.com/150" alt="Sản phẩm 1">
         <h3>Sản phẩm 1</h3>
-        <p>Giá: 50 Robux</p>
+        <p>Giá: 50.000 VNĐ</p>
         <button>Mua ngay</button>
     </div>
     <div class="product">
         <img src="https://via.placeholder.com/150" alt="Sản phẩm 2">
         <h3>Sản phẩm 2</h3>
-        <p>Giá: 100 Robux</p>
+        <p>Giá: 100.000 VNĐ</p>
         <button>Mua ngay</button>
     </div>
     <div class="product">
         <img src="https://via.placeholder.com/150" alt="Sản phẩm 3">
         <h3>Sản phẩm 3</h3>
-        <p>Giá: 150 Robux</p>
+        <p>Giá: 150.000 VNĐ</p>
         <button>Mua ngay</button>
     </div>
     <div class="product">
         <img src="https://via.placeholder.com/150" alt="Sản phẩm 4">
         <h3>Sản phẩm 4</h3>
-        <p>Giá: 200 Robux</p>
+        <p>Giá: 200.000 VNĐ</p>
         <button>Mua ngay</button>
     </div>
     <div class="product">
         <img src="https://via.placeholder.com/150" alt="Sản phẩm 5">
         <h3>Sản phẩm 5</h3>
-        <p>Giá: 250 Robux</p>
+        <p>Giá: 250.000 VNĐ</p>
         <button>Mua ngay</button>
     </div>
 </div>
@@ -128,5 +128,6 @@
 
 </body>
 </html>
+
 
 
