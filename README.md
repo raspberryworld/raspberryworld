@@ -75,6 +75,32 @@
             bottom: 0;
             width: 100%;
         }
+        .top-up {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .top-up input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 80%;
+        }
+        .top-up button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .top-up button:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
@@ -120,6 +146,13 @@
         <p>Giá: 250.000 VNĐ</p>
         <button>Mua ngay</button>
     </div>
+</div>
+
+<div class="top-up">
+    <h2>Nạp Tiền Bằng Thẻ Điện Thoại</h2>
+    <input type="text" placeholder="Nhập số điện thoại" required>
+    <input type="number" placeholder="Nhập số tiền (VNĐ)" required>
+    <button>Nạp Tiền</button>
 </div>
 
 <footer>
