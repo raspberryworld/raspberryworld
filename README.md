@@ -83,7 +83,7 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
         }
-        .top-up input {
+        .top-up select, .top-up input {
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
@@ -100,6 +100,11 @@
         }
         .top-up button:hover {
             background-color: #218838;
+        }
+        .provider {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -149,10 +154,39 @@
 </div>
 
 <div class="top-up">
-    <h2>Nạp Tiền Bằng Thẻ Điện Thoại</h2>
-    <input type="text" placeholder="Nhập số điện thoại" required>
-    <input type="number" placeholder="Nhập số tiền (VNĐ)" required>
-    <button>Nạp Tiền</button>
+    <h2>Nạp Tiền</h2>
+    <h3>Nạp thẻ cào</h3>
+    <div class="provider">
+        <label for="provider">Nhà cung cấp:</label>
+        <select id="provider">
+            <option value="viettel">VIETTEL</option>
+            <option value="vinaphone">VINAPHONE</option>
+            <option value="mobifone">MOBIFONE</option>
+            <option value="garena">GARENA</option>
+            <option value="zing">ZING</option>
+            <option value="vcoin">VCOIN</option>
+            <option value="gate">GATE</option>
+        </select>
+    </div>
+    <div class="provider">
+        <label for="denomination">Chọn mệnh giá:</label>
+        <select id="denomination">
+            <option value="10000">10,000 VNĐ (Nhận 100%)</option>
+            <option value="20000">20,000 VNĐ (Nhận 100%)</option>
+            <option value="30000">30,000 VNĐ (Nhận 100%)</option>
+            <option value="50000">50,000 VNĐ (Nhận 100%)</option>
+            <option value="100000">100,000 VNĐ (Nhận 100%)</option>
+            <option value="200000">200,000 VNĐ (Nhận 100%)</option>
+            <option value="500000">500,000 VNĐ (Nhận 100%)</option>
+            <option value="1000000">1,000,000 VNĐ (Nhận 100%)</option>
+            <option value="300000">300,000 VNĐ (Nhận 100%)</option>
+        </select>
+    </div>
+    <p><strong>*Chú ý:</strong> Nạp thẻ sai mệnh giá mất 100% giá trị thẻ.</p>
+    <input type="text" placeholder="Mã số thẻ" required>
+    <input type="text" placeholder="Số sê-ri" required>
+    <input type="text" placeholder="Mã bảo vệ" required>
+    <button>Nạp Ngay</button>
 </div>
 
 <footer>
@@ -161,5 +195,3 @@
 
 </body>
 </html>
-
-
