@@ -97,14 +97,33 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            width: 100%;
         }
         .top-up button:hover {
             background-color: #218838;
         }
-        .provider {
+        .provider, .denomination {
             display: flex;
             justify-content: space-between;
             margin: 10px 0;
+        }
+        .denomination button {
+            background-color: #e9ecef;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            flex: 1;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .denomination button:hover {
+            background-color: #d3d3d3;
+        }
+        .note {
+            color: red;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -168,21 +187,19 @@
             <option value="gate">GATE</option>
         </select>
     </div>
-    <div class="provider">
-        <label for="denomination">Chọn mệnh giá:</label>
-        <select id="denomination">
-            <option value="10000">10,000 VNĐ (Nhận 100%)</option>
-            <option value="20000">20,000 VNĐ (Nhận 100%)</option>
-            <option value="30000">30,000 VNĐ (Nhận 100%)</option>
-            <option value="50000">50,000 VNĐ (Nhận 100%)</option>
-            <option value="100000">100,000 VNĐ (Nhận 100%)</option>
-            <option value="200000">200,000 VNĐ (Nhận 100%)</option>
-            <option value="500000">500,000 VNĐ (Nhận 100%)</option>
-            <option value="1000000">1,000,000 VNĐ (Nhận 100%)</option>
-            <option value="300000">300,000 VNĐ (Nhận 100%)</option>
-        </select>
+    <div class="denomination">
+        <label>Chọn mệnh giá:</label>
+        <button>10,000 VNĐ (Nhận 100%)</button>
+        <button>20,000 VNĐ (Nhận 100%)</button>
+        <button>30,000 VNĐ (Nhận 100%)</button>
+        <button>50,000 VNĐ (Nhận 100%)</button>
+        <button>100,000 VNĐ (Nhận 100%)</button>
+        <button>200,000 VNĐ (Nhận 100%)</button>
+        <button>500,000 VNĐ (Nhận 100%)</button>
+        <button>1,000,000 VNĐ (Nhận 100%)</button>
+        <button>300,000 VNĐ (Nhận 100%)</button>
     </div>
-    <p><strong>*Chú ý:</strong> Nạp thẻ sai mệnh giá mất 100% giá trị thẻ.</p>
+    <p class="note">*Chú ý: Nạp thẻ sai mệnh giá mất 100% giá trị thẻ.</p>
     <input type="text" placeholder="Mã số thẻ" required>
     <input type="text" placeholder="Số sê-ri" required>
     <input type="text" placeholder="Mã bảo vệ" required>
