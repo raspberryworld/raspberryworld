@@ -3,37 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RaspberryWorld</title>
+    <title>RaspberryWorld - Shop</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ff6347;
-            color: white;
-            text-align: center;
+            background-color: #007bff;
             padding: 20px;
+            text-align: center;
+            color: white;
         }
         nav {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
             background-color: #333;
             padding: 10px;
         }
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 0 20px;
             font-weight: bold;
         }
-        .container {
+        .search-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .product-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 20px;
+            margin: 20px;
         }
         .product {
             background-color: white;
@@ -46,172 +66,112 @@
         }
         .product img {
             max-width: 100%;
+            height: auto;
             border-radius: 5px;
         }
         .product h3 {
-            color: #ff6347;
+            color: #007bff;
         }
         .product p {
-            font-size: 14px;
-            color: #555;
+            color: #333;
         }
         .product button {
-            background-color: #ff6347;
-            color: white;
             padding: 10px;
+            background-color: #28a745;
+            color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
         .product button:hover {
-            background-color: #ff7f50;
+            background-color: #218838;
+        }
+        .btn-nap-tien {
+            background-color: #ffc107;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: auto;
+        }
+        .btn-nap-tien:hover {
+            background-color: #e0a800;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            position: relative;
+            position: fixed;
             bottom: 0;
             width: 100%;
-        }
-        .top-up {
-            background-color: white;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .top-up select, .top-up input {
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 80%;
-        }
-        .top-up button {
-            background-color: #28a745;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-        }
-        .top-up button:hover {
-            background-color: #218838;
-        }
-        .provider {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;
-        }
-        .denomination {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 10px 0;
-        }
-        .denomination button {
-            background-color: #e9ecef;
-            color: #333;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 5px;
-            flex: 1;
-            padding: 10px;
-            transition: background-color 0.3s;
-            width: 80px; /* Width of buttons */
-        }
-        .denomination button:hover {
-            background-color: #d3d3d3;
-        }
-        .note {
-            color: red;
-            font-size: 14px;
-            margin: 10px 0;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>RaspberryWorld</h1>
+    <h1>RaspberryWorld Shop</h1>
 </header>
 
 <nav>
-    <a href="#">Trang Chủ</a>
-    <a href="#">Sản Phẩm</a>
-    <a href="#">Liên Hệ</a>
+    <div>
+        <a href="#">Sản phẩm hot</a>
+        <a href="#">Acc giá rẻ</a>
+        <a href="#">Mã giảm giá</a>
+        <a href="#">Minigame hấp dẫn</a>
+    </div>
+    <a class="btn-nap-tien" href="#nap-tien">Nạp Tiền</a>
 </nav>
 
-<div class="container">
-    <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Sản phẩm 1">
-        <h3>Sản phẩm 1</h3>
-        <p>Giá: 50.000 VNĐ</p>
-        <button>Mua ngay</button>
-    </div>
-    <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Sản phẩm 2">
-        <h3>Sản phẩm 2</h3>
-        <p>Giá: 100.000 VNĐ</p>
-        <button>Mua ngay</button>
-    </div>
-    <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Sản phẩm 3">
-        <h3>Sản phẩm 3</h3>
-        <p>Giá: 150.000 VNĐ</p>
-        <button>Mua ngay</button>
-    </div>
-    <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Sản phẩm 4">
-        <h3>Sản phẩm 4</h3>
-        <p>Giá: 200.000 VNĐ</p>
-        <button>Mua ngay</button>
-    </div>
-    <div class="product">
-        <img src="https://via.placeholder.com/150" alt="Sản phẩm 5">
-        <h3>Sản phẩm 5</h3>
-        <p>Giá: 250.000 VNĐ</p>
-        <button>Mua ngay</button>
-    </div>
+<div class="search-bar">
+    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+    <button>Tìm kiếm</button>
 </div>
 
-<div class="top-up">
+<section class="product-list">
+    <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Sản phẩm">
+        <h3>Bán Gems - Unit</h3>
+        <p>Giao dịch: 683</p>
+        <button>Mua ngay</button>
+    </div>
+    <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Sản phẩm">
+        <h3>Bán Item Arm Wrestle</h3>
+        <p>Giao dịch: 938</p>
+        <button>Mua ngay</button>
+    </div>
+</section>
+
+<section id="nap-tien">
     <h2>Nạp Tiền</h2>
-    <h3>Nạp thẻ cào</h3>
-    <div class="provider">
-        <label for="provider">Nhà cung cấp:</label>
-        <select id="provider">
-            <option value="viettel">VIETTEL</option>
-            <option value="vinaphone">VINAPHONE</option>
-            <option value="mobifone">MOBIFONE</option>
-            <option value="garena">GARENA</option>
-            <option value="zing">ZING</option>
-            <option value="vcoin">VCOIN</option>
-            <option value="gate">GATE</option>
-        </select>
-    </div>
-    <div class="denomination">
-        <button>10,000 VNĐ (Nhận 100%)</button>
-        <button>20,000 VNĐ (Nhận 100%)</button>
-        <button>30,000 VNĐ (Nhận 100%)</button>
-        <button>50,000 VNĐ (Nhận 100%)</button>
-        <button>100,000 VNĐ (Nhận 100%)</button>
-        <button>200,000 VNĐ (Nhận 100%)</button>
-        <button>500,000 VNĐ (Nhận 100%)</button>
-        <button>1,000,000 VNĐ (Nhận 100%)</button>
-        <button>300,000 VNĐ (Nhận 100%)</button>
-    </div>
-    <p class="note">*Chú ý: Nạp thẻ sai mệnh giá mất 100% giá trị thẻ.</p>
-    <input type="text" placeholder="Mã số thẻ" required>
-    <input type="text" placeholder="Số sê-ri" required>
-    <input type="text" placeholder="Mã bảo vệ" required>
+    <label for="provider">Nhà cung cấp:</label>
+    <select id="provider">
+        <option value="viettel">VIETTEL</option>
+        <option value="vinaphone">VINAPHONE</option>
+        <option value="mobifone">MOBIFONE</option>
+        <option value="garena">GARENA</option>
+        <option value="zing">ZING</option>
+    </select>
+
+    <label for="amount">Chọn mệnh giá:</label>
+    <select id="amount">
+        <option value="10000">10,000 VND - Nhận 100%</option>
+        <option value="20000">20,000 VND - Nhận 100%</option>
+        <option value="50000">50,000 VND - Nhận 100%</option>
+    </select>
+
+    <br>
+    <label for="card-number">Mã số thẻ:</label>
+    <input type="text" id="card-number" placeholder="Nhập mã số thẻ">
+    <br>
+    <label for="serial">Số sê-ri:</label>
+    <input type="text" id="serial" placeholder="Nhập số sê-ri">
+    <br>
     <button>Nạp Ngay</button>
-</div>
+</section>
 
 <footer>
     <p>&copy; 2024 RaspberryWorld. Tất cả quyền được bảo lưu.</p>
